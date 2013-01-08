@@ -7,11 +7,9 @@ version := "1.0.0-SNAPSHOT"
 scalaVersion := "2.10.0"
 
 libraryDependencies ++= Seq(
-        "com.google.code.java-allocation-instrumenter" % "java-allocation-instrumenter" % "2.0",
-        "com.google.code.gson" % "gson" % "1.7.1"
-    )
-
-//resolvers += "sonatypeSnapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
+  "com.google.caliper" % "caliper" % "0.5-rc1",
+  "com.google.code.java-allocation-instrumenter" % "java-allocation-instrumenter" % "2.0",
+  "com.google.code.gson" % "gson" % "2.2.2")
 
 fork in run := true
 
